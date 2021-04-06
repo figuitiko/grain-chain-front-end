@@ -1,0 +1,11 @@
+.episodes-item__container{
+  display: flex;
+  background-color: lightblue;
+  flex-direction: column;
+  flex:0 0 35%;
+  padding: 2rem 4rem;
+  border-radius: 32px;
+  h2{
+    font-size: 15px;
+  }
+}

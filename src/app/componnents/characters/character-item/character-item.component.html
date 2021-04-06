@@ -1,0 +1,17 @@
+<div class="character-item__container" >
+  <div class="character-item__container__upper" (click)="setIsOnline()">
+    <figure>
+      <img [src]="character.image">
+    </figure>
+    <div class="item-body">
+      <h3>{{character.name}}</h3>
+      <small>{{character.species}}</small>
+      <div class="box-sticker">
+        {{character.status}}
+      </div>
+    </div>
+  </div>
+  <app-character-edit  [character]="character" *ngIf="isOnline"></app-character-edit>
+
+</div>
+

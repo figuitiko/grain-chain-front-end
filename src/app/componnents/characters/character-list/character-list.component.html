@@ -1,0 +1,6 @@
+<div class="character-list__container">
+
+  <app-character-item *ngFor="let character of collection | paginate: config" [character]="character" ></app-character-item>
+  <pagination-controls id="basicPaginate" (pageChange)="pageChanged($event)"></pagination-controls>
+
+</div>

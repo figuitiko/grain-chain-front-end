@@ -1,0 +1,18 @@
+<div class="dashboard-container">
+  <div class="dashboard-header">
+    <h1>Dashboard</h1>
+  </div>
+  <div class="dashboard-body">
+    <div class="dashboard-sidebar">
+      <div class="nav-item">
+        <a [routerLink]="['/dashboard']" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">characters</a>
+      </div>
+      <div class="nav-item">
+        <a [routerLink]="['/dashboard',{ outlets: { 'dashboard': 'episodes' }}]" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">Episodes</a>
+      </div>
+    </div>
+    <div class="dashboard-main">
+     <router-outlet name="dashboard"></router-outlet>
+    </div>
+  </div>
+</div>

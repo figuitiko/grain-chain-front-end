@@ -123,6 +123,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "frontend-grain-chain"
+    }
+  },
+  "defaultProject": "frontend-grain-chain",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

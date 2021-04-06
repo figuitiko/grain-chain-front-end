@@ -1,0 +1,27 @@
+<div class="character_item_update">
+  <h3>Edit character</h3>
+  <app-alert [alertClass]="'alert-success'" [alertContent]="messageSuccess" *ngIf="isSuccess"></app-alert>
+  <app-alert [alertClass]="'alert-danger'" [alertContent]="messageError" *ngIf="isError"></app-alert>
+
+  <form >
+    <div class="form-control">
+      <label>Name:</label>
+
+      <input type="text" placeholder="entrar" [(ngModel)]="character.name" name="name" >
+    </div>
+    <div class="form-control">
+      <label>Location:</label>
+      <select  [(ngModel)]="character.location.id" name="location" >
+
+        <option value="">Select Location</option>
+        <option *ngFor="let location of locations"  [selected]="character.location.id" [value]="location.id">{{location.name}}</option>
+      </select>
+    </div>
+
+    <div class="btn-container">
+      <button class="btn btn-reset">reset</button>
+      <button class="btn btn-success" (click)="updateCharacter()">Edit</button>
+    </div>
+
+  </form>
+</div>
