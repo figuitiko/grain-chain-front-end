@@ -5,6 +5,7 @@ import {DashboardComponent} from "./componnents/dashboard/dashboard.component";
 import {AuthGuard} from "./helpers/auth.guard";
 import {CharacterListComponent} from "./componnents/characters/character-list/character-list.component";
 import {EpisodesListComponent} from "./componnents/episodes/episodes-list/episodes-list.component";
+import {NotFoundComponent} from "./componnents/not-found/not-found.component";
 
 
 const routes: Routes = [
@@ -24,6 +25,8 @@ const routes: Routes = [
     ]
   },
   {path:'', component:LoginScreenComponent, outlet:'primary'},
+  {path:'**', component:NotFoundComponent, outlet:'primary'},
+
 
 ];
 

@@ -15,6 +15,7 @@ import {JwtInterceptorService} from "./helpers/jwt-interceptor.service";
 import {NgxPaginationModule} from "ngx-pagination";
 import { AlertComponent } from './componnents/alert/alert.component';
 import { EpisodesItemComponent } from './componnents/episodes/episodes-item/episodes-item.component';
+import { NotFoundComponent } from './componnents/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EpisodesItemComponent } from './componnents/episodes/episodes-item/epis
     CharacterEditComponent,
     EpisodesListComponent,
     AlertComponent,
-    EpisodesItemComponent
+    EpisodesItemComponent,
+    NotFoundComponent
   ],
     imports: [
         BrowserModule,
